@@ -1,0 +1,186 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Deluxe Valley View Room",
+      "slug": "deluxe-valley-view",
+      "pricePerNight": 4800,
+      "capacity": 2,
+      "size": "350 sq ft",
+      "bedType": "Queen Bed",
+      "view": "Valley & Pine Forest",
+      "shortDescription": "Experience ultimate comfort with panoramic valley views and warm wooden interiors.",
+      "longDescription": "Our Deluxe Valley View Room offers cozy comfort with elegant interiors, modern amenities, and a private balcony overlooking the lush green Himalayan valley. Perfect for couples or solo travelers looking for a serene retreat.",
+      "amenities": [
+        "Wi-Fi",
+        "Room Heater",
+        "Balcony",
+        "Private Bathroom",
+        "Hot & Cold Water",
+        "Tea/Coffee Maker"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1590490359854-dfba19688d50?auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Luxury Suite with Mountain View",
+      "slug": "luxury-suite-mountain-view",
+      "pricePerNight": 7200,
+      "capacity": 3,
+      "size": "450 sq ft",
+      "bedType": "King Bed",
+      "view": "Snow-capped Himalayas",
+      "shortDescription": "Spacious suite offering a majestic Himalayan view with luxurious amenities.",
+      "longDescription": "Designed for those who seek exclusivity, the Luxury Suite offers unmatched comfort with panoramic views of snow-capped peaks. Featuring elegant furnishings, ambient lighting, and a large private balcony.",
+      "amenities": [
+        "Wi-Fi",
+        "Fireplace",
+        "Jacuzzi",
+        "Mini Bar",
+        "Balcony",
+        "Room Service"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1560067174-e553b3647606?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1501117716987-c8e2aeea8da6?auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Family Cottage",
+      "slug": "family-cottage",
+      "pricePerNight": 9500,
+      "capacity": 5,
+      "size": "600 sq ft",
+      "bedType": "2 King Beds",
+      "view": "Garden & Valley",
+      "shortDescription": "A perfect mountain escape for families with spacious interiors and a private garden view.",
+      "longDescription": "The Family Cottage combines rustic charm and comfort. With multiple rooms, modern facilities, and access to a private garden, it's ideal for families or groups seeking peace amidst the Himalayas.",
+      "amenities": [
+        "Wi-Fi",
+        "Living Area",
+        "Kitchenette",
+        "Private Garden",
+        "Room Service"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1600585154203-5f6b35c26b10?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Wooden Cabin",
+      "slug": "wooden-cabin",
+      "pricePerNight": 4000,
+      "capacity": 2,
+      "size": "300 sq ft",
+      "bedType": "Queen Bed",
+      "view": "Forest Side",
+      "shortDescription": "A cozy wooden cabin nestled amidst pine trees — perfect for couples and solo travelers.",
+      "longDescription": "Built entirely of natural pinewood, this cabin provides an authentic mountain living experience. Wake up to birdsong and misty mornings surrounded by nature’s calm.",
+      "amenities": [
+        "Wi-Fi",
+        "Fireplace",
+        "Private Bathroom",
+        "Outdoor Seating"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1600585153014-0062b22b8f47?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80"
+      ]
+    }
+  ],
+  "gallary": [
+    {
+      "id": 1,
+      "title": "Mountain View Room",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "category": "Rooms",
+      "description": "A cozy mountain view room with all modern amenities and breathtaking scenery.",
+      "photographer": "John Doe",
+      "additionalInfo": "Perfect for couples and solo travelers."
+    },
+    {
+      "id": 2,
+      "title": "Luxury Suite",
+      "image": "https://images.unsplash.com/photo-1590490359683-7c79b1a83e01",
+      "category": "Suites",
+      "description": "Spacious luxury suite with elegant interiors and a private balcony.",
+      "photographer": "Jane Smith",
+      "additionalInfo": "Includes complimentary breakfast and spa access."
+    },
+    {
+      "id": 3,
+      "title": "Cottage Exterior",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "category": "Cottages",
+      "description": "Rustic cottages surrounded by nature, ideal for a peaceful retreat.",
+      "photographer": "Alice Johnson",
+      "additionalInfo": "Pets allowed on request."
+    },
+    {
+      "id": 4,
+      "title": "Hilltop Restaurant",
+      "image": "https://images.unsplash.com/photo-1555992336-03a23c27a3fa",
+      "category": "Dining",
+      "description": "Restaurant with panoramic hilltop views and gourmet cuisine.",
+      "photographer": "Michael Brown",
+      "additionalInfo": "Reservation recommended during weekends."
+    },
+    {
+      "id": 5,
+      "title": "Resort Garden",
+      "image": "https://images.unsplash.com/photo-1560448070-4328a63b88a9",
+      "category": "Nature",
+      "description": "Beautiful landscaped gardens with walking paths and fountains.",
+      "photographer": "Emily Davis",
+      "additionalInfo": "Ideal for morning walks and photography."
+    }
+  ],
+  "experiences": [
+    {
+      "id": 1,
+      "title": "Himalayan Trek Adventure",
+      "slug": "Himalayan Trek Adventure",
+      "location": "Manali, Himachal Pradesh",
+      "date": "June 2023",
+      "image": "/images/experiences/himalayan-trek.jpg",
+      "description": "A thrilling 5-day trek through the Himalayan ranges, covering scenic valleys, snow-covered trails, and breathtaking campsites.",
+      "category": "Adventure"
+    },
+    {
+      "id": 2,
+      "title": "Cultural Walk in Jaipur",
+      "slug": "Cultural Walk in Jaipur",
+      "location": "Jaipur, Rajasthan",
+      "date": "December 2022",
+      "image": "/images/experiences/jaipur-walk.jpg",
+      "description": "Explored the cultural heritage of Jaipur through its colorful bazaars, palaces, and local cuisine on a guided cultural walk.",
+      "category": "Culture"
+    },
+    {
+      "id": 3,
+      "title": "Beach Cleanup Initiative",
+      "slug": "Beach Cleanup Initiative",
+      "location": "Goa",
+      "date": "April 2023",
+      "image": "/images/experiences/goa-cleanup.jpg",
+      "description": "Participated in a community-led beach cleanup drive promoting sustainable tourism and marine life protection.",
+      "category": "Volunteering"
+    },
+    {
+      "id": 4,
+      "title": "Mountain Photography Workshop",
+      "slug": "Mountain Photography Workshop",
+      "location": "Leh, Ladakh",
+      "date": "August 2023",
+      "image": "/images/experiences/leh-photography.jpg",
+      "description": "Joined a 3-day mountain photography workshop, capturing landscapes, monasteries, and local lifestyles.",
+      "category": "Photography"
+    }
+  ]
+}
