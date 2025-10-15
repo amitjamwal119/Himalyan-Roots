@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\n  \"app\": {\n    \"[project]/Himalyan-Roots/src/app/_not-found/page\": [],\n    \"[project]/Himalyan-Roots/src/app/auth/page\": [],\n    \"[project]/Himalyan-Roots/src/app/contactUs/page\": [],\n    \"[project]/Himalyan-Roots/src/app/page\": []\n  },\n  \"appUsingSizeAdjust\": false,\n  \"pages\": {},\n  \"pagesUsingSizeAdjust\": false\n}"

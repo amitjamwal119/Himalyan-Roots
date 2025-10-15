@@ -1,25 +1,27 @@
 "use client";
 
+import { useForm } from "react-hook-form";
 // import { useState } from "react";
 import MainLayout from "../main-layout";
+import { contactSchema, ContactSchemaType } from "@/schemas/contactSchema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import axios from "axios";
 
 export default function Contact() {
-    // Temporary local state (we’ll replace this with React Hook Form or backend integration later)
-    // const [formData, setFormData] = useState({
-    //     name: "",
-    //     email: "",
-    //     subject: "",
-    //     message: "",
-    // });
 
-    // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    //     setFormData({ ...formData, [e.target.name]: e.target.value });
-    // };
+    const { register, handleSubmit, formState: { errors, isSubmitting }, } = useForm<ContactSchemaType>({ resolver: zodResolver(contactSchema), });
 
-    // const handleSubmit = (e: React.FormEvent) => {
-    //     e.preventDefault();
-    //     console.log("Form Submitted:", formData);
-    // };
+    const onSubmit = async (data: object) => {
+        console.log("Submitted Data:", data);
+        // console.log(typeof(data));
+        try {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL as string}/userQueries`, data);
+            console.log(response.data);
+
+        } catch (error) {
+            console.log("error is:", error);
+        }
+    }
 
     return (
         <MainLayout>
@@ -60,7 +62,7 @@ export default function Contact() {
                     {/* ---------- Right Side: Contact Form ---------- */}
                     <div>
                         <h2 className="text-2xl font-semibold text-green-700 mb-6">Send Us a Message</h2>
-                        <form className="space-y-5">
+                        <form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
                             {/* onSubmit={handleSubmit} */}
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -69,11 +71,12 @@ export default function Contact() {
                                 <input
                                     type="text"
                                     id="name"
-                                    name="name"
-                                    
-                                    required
-                                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-600 focus:outline-none"
+                                    {...register("name")}
+
+                                    className={errors.name ? 'text-xl p-2 border rounded border-red-700 w-full px-4 py-2 focus:ring-2 focus:ring-red-600 focus:outline-none resize-none' : 'w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-600 focus:outline-none resize-none'}
                                 />
+                                {errors.name && <p className="text-red-700">{errors.name.message}</p>}
+
                                 {/* value={formData.name}
                                     onChange={handleChange} */}
                             </div>
@@ -85,11 +88,13 @@ export default function Contact() {
                                 <input
                                     type="email"
                                     id="email"
-                                    name="email"
-                                   
-                                    required
-                                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-600 focus:outline-none"
+
+                                    {...register("email")}
+
+                                    className={errors.email ? 'text-xl p-2 border rounded border-red-700 w-full px-4 py-2 focus:ring-2 focus:ring-red-600 focus:outline-none resize-none' : 'w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-600 focus:outline-none resize-none'}
                                 />
+                                {errors.email && <p className="text-red-700">{errors.email.message}</p>}
+
                                 {/*  value={formData.email}
                                     onChange={handleChange} */}
                             </div>
@@ -101,12 +106,14 @@ export default function Contact() {
                                 <input
                                     type="text"
                                     id="subject"
-                                    name="subject"
-                                   
-                                    required
-                                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-600 focus:outline-none"
+
+                                    {...register("subject")}
+
+                                    className={errors.subject ? 'text-xl p-2 border rounded border-red-700 w-full px-4 py-2 focus:ring-2 focus:ring-red-600 focus:outline-none resize-none' : 'w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-600 focus:outline-none resize-none'}
                                 />
-                                 {/* value={formData.subject}
+                                {errors.subject && <p className="text-red-700">{errors.subject.message}</p>}
+
+                                {/* value={formData.subject}
                                     onChange={handleChange} */}
                             </div>
 
@@ -116,18 +123,20 @@ export default function Contact() {
                                 </label>
                                 <textarea
                                     id="message"
-                                    name="message"
+                                    {...register("message")}
                                     rows={5}
-                                    
-                                    required
-                                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-600 focus:outline-none resize-none"
+
+
+                                    className={errors.message ? 'text-xl p-2 border rounded border-red-700 w-full px-4 py-2 focus:ring-2 focus:ring-red-600 focus:outline-none resize-none' : 'w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-600 focus:outline-none resize-none'}
                                 ></textarea>
+                                {errors.message && <p className="text-red-700">{errors.message.message}</p>}
+
                                 {/* value={formData.message}
                                     onChange={handleChange} */}
                             </div>
 
                             <button
-                                type="submit"
+                                type="submit" disabled={isSubmitting}
                                 className="w-full bg-green-700 text-white py-2 rounded-lg hover:bg-green-800 transition-all duration-200"
                             >
                                 Submit

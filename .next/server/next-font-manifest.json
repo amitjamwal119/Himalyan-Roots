@@ -1,0 +1,11 @@
+{
+  "app": {
+    "[project]/Himalyan-Roots/src/app/_not-found/page": [],
+    "[project]/Himalyan-Roots/src/app/auth/page": [],
+    "[project]/Himalyan-Roots/src/app/contactUs/page": [],
+    "[project]/Himalyan-Roots/src/app/page": []
+  },
+  "appUsingSizeAdjust": false,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

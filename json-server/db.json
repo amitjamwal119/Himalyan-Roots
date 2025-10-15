@@ -182,5 +182,23 @@
       "description": "Joined a 3-day mountain photography workshop, capturing landscapes, monasteries, and local lifestyles.",
       "category": "Photography"
     }
+  ],
+  "userDetails": [
+    {
+      "id": "6680",
+      "name": "Amit Jamwal",
+      "phone": "7807271261",
+      "email": "ak7719869@gmail.com",
+      "password": "Abcd@1235"
+    }
+  ],
+  "userQueries": [
+    {
+      "id": "a88d",
+      "name": "Amit Jamwal",
+      "email": "ak7719869@gmail.com",
+      "subject": "aaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbb",
+      "message": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
   ]
 }
