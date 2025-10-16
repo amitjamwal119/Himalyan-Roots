@@ -65,7 +65,7 @@ Your app will start at http://localhost:3000
 
 ✅ Admin Panel integration
 
-✅ Form validation using React Hook Form
+✅ TANSTACK Query
 
 ✅ UI/UX fixes and enhancements
 
